@@ -1,13 +1,18 @@
 ﻿<Properties StartupItem="Poke/Poke.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Poke/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Poke/Pokemon.cs">
     <Files>
-      <File FileName="Poke/PokeProgram.cs" Line="109" Column="7" />
-      <File FileName="Poke/Program.cs" Line="54" Column="45" />
+      <File FileName="Poke/Program.cs" Line="28" Column="1" />
+      <File FileName="Poke/Player.cs" Line="31" Column="6" />
+      <File FileName="Poke/Item.cs" Line="21" Column="1" />
+      <File FileName="Poke/Receive Pokemon.cs" Line="96" Column="1" />
+      <File FileName="Poke/Pokemon.cs" Line="6" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/scottladan/Projects/Poke/Poke/Pokemon.cs" line="7" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
