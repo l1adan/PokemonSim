@@ -1,0 +1,13 @@
+﻿<Properties StartupItem="Poke/Poke.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Poke/Program.cs">
+    <Files>
+      <File FileName="Poke/PokeProgram.cs" Line="109" Column="7" />
+      <File FileName="Poke/Program.cs" Line="54" Column="45" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

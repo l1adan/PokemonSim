@@ -1,0 +1,5 @@
+/Users/scottladan/Projects/Poke/Poke/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/scottladan/Projects/Poke/Poke/bin/Debug/Poke.exe.mdb
+/Users/scottladan/Projects/Poke/Poke/bin/Debug/Poke.exe
+/Users/scottladan/Projects/Poke/Poke/obj/x86/Debug/Poke.exe
+/Users/scottladan/Projects/Poke/Poke/obj/x86/Debug/Poke.exe.mdb
