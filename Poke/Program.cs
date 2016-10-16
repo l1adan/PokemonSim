@@ -11,18 +11,6 @@ namespace pokePracticeWithMeww
 
 		}
 
-		public class Items
-		{
-			int pokeBalls;
-			public int PokeBalls;
-
-			int potion;
-			public int Potion;
-
-			List <string> pokemon = new List <string>();
-
-		}
-
 		public class Player
 		{
 			string gender;
@@ -38,20 +26,32 @@ namespace pokePracticeWithMeww
 			//________________________________________
 
 
-			public Player (string gender)
-			{
-				this.Gender = gender;
-			}
 
-			public Player (int age, string characterName)
+		public Player (int age, string characterName, string gender)
+
 			{
 				this.Age = age;
-				this.CharacterName = characterName;
+				this.CharacterName = CharacterSetUp();
+				this.Gender = gender;
 			}
 
 
 
 		}
+
+		public class Items
+		{
+			int pokeBalls;
+			public int PokeBalls;
+
+			int potion;
+			public int Potion;
+
+			List <string> pokemon = new List <string>();
+
+		}
+
+
 
 
 
@@ -248,8 +248,6 @@ namespace pokePracticeWithMeww
 
 			public static void CatchOrRun(string name)
 			{
-
-
 				Console.WriteLine ("Would you like to catch this pokemon? Or run away?");
 				Console.WriteLine ();
 				Console.WriteLine ("SELECT:");
@@ -265,6 +263,16 @@ namespace pokePracticeWithMeww
 				} else {
 					catchPokemon ();
 				}
+			}
+
+			//_________________________________________________________________________________________________________________
+
+
+
+			public string CharacterSetUp ()
+			{
+				Console.WriteLine ("Welcome ! Erm... What should we call you ?");
+				return Console.ReadLine();
 			}
 
 		}
