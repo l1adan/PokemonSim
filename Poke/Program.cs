@@ -9,8 +9,6 @@ namespace pokePracticeWithMeww
 		{
 			ReceivePokemon receivePokemon = new ReceivePokemon (ReceivePokemon.namePokemon());
 
-			int potions = 5;
-			Console.WriteLine (potions);
 		}
 
 		public class Items
@@ -45,16 +43,14 @@ namespace pokePracticeWithMeww
 				this.Gender = gender;
 			}
 
-			public Player (int age)
+			public Player (int age, string characterName)
 			{
 				this.Age = age;
-			}
-
-
-			public Player (string characterName) // ?
-			{
 				this.CharacterName = characterName;
 			}
+
+
+
 		}
 
 
