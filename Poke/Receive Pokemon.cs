@@ -81,7 +81,7 @@ namespace Poke
 					Console.WriteLine ("You need to move around to find Pokemon.");
 					Console.WriteLine ("To start moving in a direction:");
 
-					Pokemon.catchPokemon ();
+					Pokemon.PokemonToCatch ();
 
 
 

@@ -8,7 +8,13 @@ namespace pokePracticeWithMeww
 	{
 		public static void Main (string[] args)
 		{
+			Player player = new Player ();
 			ReceivePokemon receivePokemon = new ReceivePokemon (ReceivePokemon.namePokemon ());
+			Pokemon.PokemonToCatch ();
+
+
+
+
 		}
 
 		//______________________________________________________________________________________

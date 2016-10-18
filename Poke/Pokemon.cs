@@ -5,7 +5,7 @@ namespace Poke
 	
 	public class Pokemon							//POKEMON OBJECTS_______________________________________________________________
 			{
-
+		
 				string pidgey = "Pidgey";
 				string jigglyPuff = "Jiggly Puff";
 				string koffing = "Koffing";
@@ -30,9 +30,9 @@ namespace Poke
 
 
 
-					if (userDirection % 2 == 0) {
+					if (userDirection == 4) {
 
-					PokemonToCatch ();
+				//Pokemon.PokemonToCatch ();
 				} 
 
 
@@ -46,8 +46,9 @@ namespace Poke
 
 			}
 
-			public static void PokemonToCatch()
+		public static void PokemonToCatch(Player player)
 			{
+				
 				Random random = new Random ();
 				int num = random.Next (5);
 
@@ -58,6 +59,7 @@ namespace Poke
 				string koffing = "Koffing";
 				string evee = "Evee";
 				string abra = "Abra";
+
 
 
 				switch (num) 
@@ -77,17 +79,17 @@ namespace Poke
 
 					break;
 
-				case 3:
-					Console.WriteLine ("A wild " + koffing + " appeared!");
-					appearedPokemon = koffing;
-					CatchOrRun (appearedPokemon);
+			case 3:
+				Console.WriteLine ("What's this!? You found a Potion!" + player.CharacterName + " Received 1 Potion!");
+				player.Potions += 1;
+				catchPokemon ();
 
 					break;
 
 				case 4:
-					Console.WriteLine ("A wild " + evee + " appeared!");
-					appearedPokemon = evee;
-					CatchOrRun (appearedPokemon);
+					Console.WriteLine ("Hmm.. There doesn't seem to be anything here... Lets try a different direction.");
+					
+				catchPokemon()
 
 					break;
 
