@@ -38,6 +38,8 @@
     <Compile Include="Receive Pokemon.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="PlayerClass.cs" />
+    <Compile Include="Properties\Menu.cs" />
+    <Compile Include="Adventure.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,9 +3,14 @@
 namespace Poke
 {
 	
-	public class Pokemon							//POKEMON OBJECTS_______________________________________________________________
+	public class Pokemon	//___________________________________________POKEMON OBJECTS & STATS_________________________________________________________
 			{
-		
+				
+				//Add 10 more Pokemon
+				//Add pokemon Stats: Health, Attack Dmg, Level.
+				//Implement Experience and lvl Gain.
+				//Increment Stat gain based on lvl gain.
+				//______________________________________
 				string pidgey = "Pidgey";
 				string jigglyPuff = "Jiggly Puff";
 				string koffing = "Koffing";
@@ -13,10 +18,7 @@ namespace Poke
 				string abra = "Abra";
 
 
-
-	
-
-				public static void catchPokemon()
+		public static void catchPokemon()
 				{
 					Console.WriteLine ();
 					Console.WriteLine ("SELECT 1: Forward");
@@ -32,15 +34,12 @@ namespace Poke
 
 					if (userDirection == 4) {
 
-				//Pokemon.PokemonToCatch ();
+				Console.WriteLine ("Hmm... There doesn't seem to be anything here...Lets try a different direction. ");
+				catchPokemon ();
+
+
 				} 
-
-
-
-				else {
-					Console.WriteLine ("Hmm... There doesn't seem to be anything here...Lets try a different direction. ");
-					catchPokemon ();
-				}
+				
 
 
 
@@ -67,7 +66,7 @@ namespace Poke
 				case 1:
 					Console.WriteLine ("A wild " + pidgey + " appeared!");
 					appearedPokemon = pidgey;
-					CatchOrRun (appearedPokemon);
+					CatchOrRun(appearedPokemon);
 
 
 					break;
@@ -86,10 +85,10 @@ namespace Poke
 
 					break;
 
-				case 4:
-					Console.WriteLine ("Hmm.. There doesn't seem to be anything here... Lets try a different direction.");
+			case 4:
+				Console.WriteLine ("Hmm.. There doesn't seem to be anything here... Lets try a different direction.");
 					
-				catchPokemon()
+				catchPokemon ();
 
 					break;
 
@@ -100,7 +99,7 @@ namespace Poke
 
 					break;
 
-					//return appearedPokemon;
+					return appearedPokemon;
 				}
 
 

@@ -14,7 +14,7 @@ namespace Poke
 					this.PokeName = pokeName;
 				}
 
-				public static string namePokemon()					//NAME POKEMON METHOD
+				public static string PokemonSelection()					//NAME POKEMON METHOD
 				{
 					Console.WriteLine ("Select the number of the pokemon you'd like to recieve:");
 
@@ -58,8 +58,9 @@ namespace Poke
 						break;
 
 					}
+			//____________________________________________________________________________
 
-
+			//Create Adventure Class
 
 					Console.WriteLine ();
 					Console.WriteLine("Press enter to continue:");

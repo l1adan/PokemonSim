@@ -8,9 +8,10 @@ namespace pokePracticeWithMeww
 	{
 		public static void Main (string[] args)
 		{
-			Player player = new Player ();
-			ReceivePokemon receivePokemon = new ReceivePokemon (ReceivePokemon.namePokemon ());
-			Pokemon.PokemonToCatch ();
+			Header (); 						//	Opening game header
+			Player player = new Player (); 	//	New player instantiation: Runs Character set up : Holds Character stats.
+			ReceivePokemon receivePokemon = new ReceivePokemon (ReceivePokemon.namePokemon ()); // Player picks starting pokemon
+			Pokemon.PokemonToCatch (Player);
 
 
 
@@ -20,13 +21,16 @@ namespace pokePracticeWithMeww
 		//______________________________________________________________________________________
 
 
+		public void Header()
+		{
+			Console.WriteLine ("\a_________ ( __________________ ) _________");
+			Console.WriteLine ();
+			Console.WriteLine ("---------( Welcome to PokeMon Sim ! )--------");
+			Console.WriteLine ();
+			Console.WriteLine ("_________ ( __________________ ) _________");
+		}
 
-
-			public string CharacterSetUp ()
-			{
-				Console.WriteLine ("Welcome ! Erm... What should we call you ?");
-				return Console.ReadLine();
-			}
+			
 
 		}
 	}
