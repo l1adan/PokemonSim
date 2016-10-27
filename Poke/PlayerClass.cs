@@ -42,50 +42,6 @@ namespace Poke
 
 
 
-		public Player()
-
-	{
-
-		string newCharacter;
-
-		Console.WriteLine ("Hello ! Erm... What should we call you ?");
-		Console.WriteLine ();
-
-
-		Console.WriteLine ("Press (1) to create a New Player Profile: ");
-
-		Console.WriteLine ("1.)Create Character");
-		newCharacter = int.Parse (Console.ReadLine ());
-
-		switch (newCharacter)
-		{
-
-		case 1:
-					
-			Console.WriteLine ("Please enter your characters name: ");
-			this.CharacterName = Console.ReadLine ();
-
-				//________________________________________
-
-			Console.WriteLine ("How old is your Character?");
-			this.Age = int.Parse (Console.ReadLine ());
-					
-				//________________________________________
-					
-			Console.WriteLine ("What is your Characters gender?");
-			this.Gender = Console.ReadLine ();
-
-			break;
-
-			
-		}
-
-			Console.WriteLine ("Press Enter to continue: ");
-
-			Console.ReadKey ();
-
-			Console.Clear ();
-
-	}
 	
+	}
 }

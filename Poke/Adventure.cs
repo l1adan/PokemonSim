@@ -4,6 +4,7 @@ namespace Poke
 {
 	public class Adventure
 	{
+		Player player = new Player ();
 
 		public static void StartingAdventure ()
 		{
@@ -19,7 +20,7 @@ namespace Poke
 			Console.WriteLine ("Now it's time to start your adventure and catch Pokemon !");
 			Console.WriteLine ();
 			Console.WriteLine ("To catch pokemon, you'll need Poke Balls. Here!");
-			Console.WriteLine ("\a"+ CharacterName + " received 3 pokeballs!");       //CharacterName
+			Console.WriteLine ("\a"+ player.CharacterName + " received 3 pokeballs!");       //CharacterName
 			Console.WriteLine ();
 
 			Console.WriteLine ();
@@ -27,11 +28,11 @@ namespace Poke
 			Console.WriteLine ("You need to move around to find Pokemon.");
 			Console.WriteLine ("To start moving in a direction:");
 
-			Pokemon.PokemonToCatch ();
 
 
 
-			return pokeName;
+
+
 		}
 	}
 }

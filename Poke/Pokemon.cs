@@ -6,6 +6,9 @@ namespace Poke
 	public class Pokemon	//___________________________________________POKEMON OBJECTS & STATS_________________________________________________________
 			{
 				
+
+		Player player = new Player ();
+
 		//Add to Player Class received Pokemon ?		
 
 
@@ -22,27 +25,20 @@ namespace Poke
 
 
 		//Took this from Receive pokemon class.
-		public class RecievePokemon
+		public static string RecievePokemon ()
 		{
 
 			string pokeName;
-			public string PokeName { get; set;}
 
 
-			public ReceivePokemon(string pokeName)
-			{
-				this.PokeName = pokeName;
-			}
 
-			public static string PokemonSelection()					//NAME POKEMON METHOD
-			{
 				Console.WriteLine ("Select the number of the pokemon you'd like to recieve:");
 
 				string squirtle = "Squirtle";
 				string charmander = "Charmander";
 				string bulbasaur = "Bulbasuar";
 
-				string pokeName = "";
+				pokeName = "";
 
 				Console.WriteLine ("1.\tSquirtle");
 				Console.WriteLine ("2.\tCharmander");
@@ -77,7 +73,9 @@ namespace Poke
 					break;
 
 				}
-			}
+
+			return pokeName;
+		}
 		
 
 
@@ -108,7 +106,7 @@ namespace Poke
 
 			}
 
-		public static void PokemonToCatch(Player player) //Ask mew mew to explain
+		public static string PokemonToCatch(Player player) //Ask mew mew to explain
 			{
 				
 				Random random = new Random ();
@@ -126,27 +124,27 @@ namespace Poke
 
 				switch (num) 
 				{
-				case 1:
-					Console.WriteLine ("A wild " + pidgey + " appeared!");
-					appearedPokemon = pidgey;
-					CatchOrRun(appearedPokemon);
+			case 1:
+				Console.WriteLine ("A wild " + pidgey + " appeared!");
+				appearedPokemon = pidgey;
+				CatchOrRun(appearedPokemon);
 
 
-					break;
+				break;
 
-				case 2:
-					Console.WriteLine ("A wild " + jigglyPuff + " appeared!");
-					appearedPokemon = jigglyPuff;
-					CatchOrRun (appearedPokemon);
+			case 2:
+				Console.WriteLine ("A wild " + jigglyPuff + " appeared!");
+				appearedPokemon = jigglyPuff;
+				CatchOrRun (appearedPokemon);
 
-					break;
+				break;
 
 			case 3:
 				Console.WriteLine ("What's this!? You found a Potion!" + player.CharacterName + " Received 1 Potion!");
 				player.Potions += 1;
 				catchPokemon ();
 
-					break;
+				break;
 
 			case 4:
 				Console.WriteLine ("Hmm.. There doesn't seem to be anything here... Lets try a different direction.");
@@ -155,15 +153,15 @@ namespace Poke
 
 					break;
 
-				case 0:
-					Console.WriteLine ("A wild " + abra + " appeared!");
-					appearedPokemon = abra;
-					CatchOrRun (appearedPokemon);
+			case 0:
+				Console.WriteLine ("A wild " + abra + " appeared!");
+				appearedPokemon = abra;
+				CatchOrRun (appearedPokemon);
 
-					break;
+				break;
 
-					return appearedPokemon;
 				}
+				return appearedPokemon;
 
 
 			}
