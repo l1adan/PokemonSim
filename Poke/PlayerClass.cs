@@ -6,7 +6,7 @@ namespace Poke
 		public class Items  
 
 	// Items
-	// Add Item functionality - Increment / Decrement when used or found.
+	// Add Item functionality - Increment / Decrement when used or found. LATER
 	// Healing property to potions
 	{
 				
@@ -16,7 +16,7 @@ namespace Poke
 				
 		public int Potions { get; set;}
 				
-		List <string> pokemon = new List <string>();
+		List <string> pokemon = new List <string>();  // List to hold caught Pokemon 0
 	}
 
 
@@ -76,7 +76,13 @@ namespace Poke
 			this.Gender = Console.ReadLine ();
 
 			break;
+
+			
 		}
+
+			Console.WriteLine ("Press Enter to continue: ");
+
+			Console.ReadKey ();
 
 			Console.Clear ();
 

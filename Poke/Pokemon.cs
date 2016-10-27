@@ -6,16 +6,79 @@ namespace Poke
 	public class Pokemon	//___________________________________________POKEMON OBJECTS & STATS_________________________________________________________
 			{
 				
-				//Add 10 more Pokemon
-				//Add pokemon Stats: Health, Attack Dmg, Level.
-				//Implement Experience and lvl Gain.
-				//Increment Stat gain based on lvl gain.
-				//______________________________________
-				string pidgey = "Pidgey";
-				string jigglyPuff = "Jiggly Puff";
-				string koffing = "Koffing";
-				string evee = "Evee";
-				string abra = "Abra";
+		//Add to Player Class received Pokemon ?		
+
+
+		//Need to Add: 10more Pokemon, Pokemon Stats: Health, Attack Dmg, Level.
+		//Experience and lvl Gain.
+		//Stat gain based on lvl gain.
+				
+			string pidgey = "Pidgey";					//Wild Pokemon
+			string jigglyPuff = "Jiggly Puff";
+			string koffing = "Koffing";
+			string evee = "Evee";
+			string abra = "Abra";
+
+
+
+		//Took this from Receive pokemon class.
+		public class RecievePokemon
+		{
+
+			string pokeName;
+			public string PokeName { get; set;}
+
+
+			public ReceivePokemon(string pokeName)
+			{
+				this.PokeName = pokeName;
+			}
+
+			public static string PokemonSelection()					//NAME POKEMON METHOD
+			{
+				Console.WriteLine ("Select the number of the pokemon you'd like to recieve:");
+
+				string squirtle = "Squirtle";
+				string charmander = "Charmander";
+				string bulbasaur = "Bulbasuar";
+
+				string pokeName = "";
+
+				Console.WriteLine ("1.\tSquirtle");
+				Console.WriteLine ("2.\tCharmander");
+				Console.WriteLine ("3.\tBulbasaur");
+
+
+
+
+				int userPokeSelection = int.Parse (Console.ReadLine ());
+
+				Console.Clear ();
+
+				switch (userPokeSelection) {
+				case 1:
+
+					Console.WriteLine ("You chose Squirtle! A water type pokemon.");
+					pokeName = squirtle;
+					break;
+
+
+				case 2:
+
+					Console.WriteLine ("You chose Charmander! A fire type pokemon.");
+					pokeName = charmander;
+					break;
+
+				case 3:
+
+					Console.WriteLine ("You chose Bulbasaur! A grass type pokemon.");
+					pokeName = bulbasaur;
+
+					break;
+
+				}
+			}
+		
 
 
 		public static void catchPokemon()
@@ -45,7 +108,7 @@ namespace Poke
 
 			}
 
-		public static void PokemonToCatch(Player player)
+		public static void PokemonToCatch(Player player) //Ask mew mew to explain
 			{
 				
 				Random random = new Random ();
